@@ -1,5 +1,4 @@
 # Alook org chart for the competitive-intelligence company
-# (from the DDODS walkthrough, 2026-07-01)
 company: competitive-intelligence
 agents:
   - name: atlas

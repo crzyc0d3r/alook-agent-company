@@ -1,10 +1,7 @@
 """Price tracker for a competitor pricing page.
 
-Standalone version of the scraper the engineer agent ("Theo") builds in the
-DDODS walkthrough "[Hands-on] How to Build Your Own AI Company" (2026-07-01).
-https://www.dailydoseofds.com
-
-Fetches a pricing page, extracts price-like strings, stores a timestamped
+Standalone version of the scraper the engineer agent ("Theo") builds:
+fetches a pricing page, extracts price-like strings, stores a timestamped
 snapshot, diffs against the previous snapshot, and prints a change report.
 Intended to run on a schedule (e.g., daily at 9am).
 

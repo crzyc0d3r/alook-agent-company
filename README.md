@@ -1,10 +1,8 @@
 # Build Your Own AI Company with Alook — Competitive-Intelligence Org
 
-Creation of the hands-on walkthrough from the [Daily Dose of Data Science](https://www.dailydoseofds.com) newsletter issue *"[Hands-on] How to Build Your Own AI Company"* (2026-07-01), by Avi Chawla & Akshay Pachaar. All credit to DDODS and the [Alook](https://github.com/alookai/alook) team.
+This project builds a four-agent "competitive intelligence" company on [Alook](https://github.com/alookai/alook) — an open-source, self-hosted platform that turns local coding agents (Claude Code / OpenCode / Codex) into an org chart where agents coordinate over real `@alook.ai` email inboxes. The company provisions a price scraper for `railway.app/pricing`, schedules it daily at 9am, and emails the human when a price changes.
 
-The tutorial builds a four-agent "competitive intelligence" company on [Alook](https://github.com/alookai/alook) — an open-source, self-hosted platform that turns local coding agents (Claude Code / OpenCode / Codex) into an org chart where agents coordinate over real `@alook.ai` email inboxes. The company provisions a price scraper for `railway.app/pricing`, schedules it daily at 9am, and emails the human when a price changes.
-
-The original walkthrough is UI-driven (the newsletter shows dashboard screenshots, not code), so this repo captures it as reproducible configuration plus a standalone, runnable price-tracker the engineer agent is asked to build.
+Alook's setup is UI-driven, so this repo captures the build as reproducible configuration plus a standalone, runnable price-tracker the engineer agent is asked to build.
 
 ## 1. Set up Alook
 
@@ -33,7 +31,7 @@ Theo and Ren never talk to each other or to Atlas directly — everything routes
 
 ## 3. Give Theo scraping tools
 
-The walkthrough grants Theo the [Bright Data CLI](https://github.com/brightdata/cli) so it can scrape without IP blocks/CAPTCHAs and provision persistent custom scrapers from a plain-English page description. Requires a Bright Data account: put your API key in the `BRIGHTDATA_API_KEY` environment variable (placeholder only — never commit keys).
+Theo gets the [Bright Data CLI](https://github.com/brightdata/cli) so it can scrape without IP blocks/CAPTCHAs and provision persistent custom scrapers from a plain-English page description. Requires a Bright Data account: put your API key in the `BRIGHTDATA_API_KEY` environment variable (placeholder only — never commit keys).
 
 ## 4. Hand the company a job
 
@@ -53,4 +51,3 @@ python price_tracker.py --url https://railway.app/pricing
 
 - Alook: https://github.com/alookai/alook
 - Bright Data CLI: https://github.com/brightdata/cli
-- Original newsletter: https://www.dailydoseofds.com
