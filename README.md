@@ -1,6 +1,6 @@
 # Build Your Own AI Company with Alook — Competitive-Intelligence Org
 
-Recreation of the hands-on walkthrough from the [Daily Dose of Data Science](https://www.dailydoseofds.com) newsletter issue *"[Hands-on] How to Build Your Own AI Company"* (2026-07-01), by Avi Chawla & Akshay Pachaar. All credit to DDODS and the [Alook](https://github.com/alookai/alook) team.
+Creation of the hands-on walkthrough from the [Daily Dose of Data Science](https://www.dailydoseofds.com) newsletter issue *"[Hands-on] How to Build Your Own AI Company"* (2026-07-01), by Avi Chawla & Akshay Pachaar. All credit to DDODS and the [Alook](https://github.com/alookai/alook) team.
 
 The tutorial builds a four-agent "competitive intelligence" company on [Alook](https://github.com/alookai/alook) — an open-source, self-hosted platform that turns local coding agents (Claude Code / OpenCode / Codex) into an org chart where agents coordinate over real `@alook.ai` email inboxes. The company provisions a price scraper for `railway.app/pricing`, schedules it daily at 9am, and emails the human when a price changes.
 
