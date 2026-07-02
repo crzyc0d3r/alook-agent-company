@@ -1,0 +1,36 @@
+# Alook org chart for the competitive-intelligence company
+# (from the DDODS walkthrough, 2026-07-01)
+company: competitive-intelligence
+agents:
+  - name: atlas
+    title: CEO
+    inbox: atlas@alook.ai        # claim your own unique @alook.ai address
+    runtime: claude-code          # or opencode / codex
+    reports_to: human
+    prompt: company/agents/atlas.md
+  - name: mara
+    title: Product Manager
+    inbox: mara@alook.ai
+    runtime: claude-code
+    reports_to: atlas
+    prompt: company/agents/mara.md
+  - name: theo
+    title: Engineer
+    inbox: theo@alook.ai
+    runtime: claude-code
+    reports_to: mara
+    tools:
+      - brightdata-cli            # requires BRIGHTDATA_API_KEY (do not commit)
+    prompt: company/agents/theo.md
+  - name: ren
+    title: Ops / Customer-facing
+    inbox: ren@alook.ai
+    runtime: claude-code
+    reports_to: mara
+    prompt: company/agents/ren.md
+routing:
+  - human -> atlas
+  - atlas -> mara
+  - mara -> theo
+  - mara -> ren
+  # theo and ren never communicate directly, and never with atlas
